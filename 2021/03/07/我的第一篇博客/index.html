@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="我的第一篇博客, 钟阔的博客">
+    <meta name="keywords" content="类模板的使用, 钟阔的博客">
     <meta name="description" content="不要等到明天，今天就行动起来！">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>我的第一篇博客 | 钟阔的博客</title>
+    <title>类模板的使用 | 钟阔的博客</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -310,12 +310,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/16.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">我的第一篇博客</h1>
+                    <h1 class="description center-align post-title">类模板的使用</h1>
                 </div>
             </div>
         </div>
@@ -474,11 +474,13 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="第一章"><a href="#第一章" class="headerlink" title="第一章"></a>第一章</h2><p>内容</p>
-<hr>
-<h2 id="第二章"><a href="#第二章" class="headerlink" title="第二章"></a>第二章</h2><p>内容</p>
-<hr>
-<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><p><a target="_blank" rel="noopener" href="http://www.codesheep.cnf/">www.codesheep.cnf</a></p>
+                <h2 id="类模板的定义"><a href="#类模板的定义" class="headerlink" title="类模板的定义"></a>类模板的定义</h2><p>类模板可以理解为一个抽象的类，但类模板并不是真正的类，它会告诉编译器一种生成类的方法，编译器会在遇到类模板的实例化时，会按照模板生成相应的类。其定义形式一般为；</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">template&lt;参数名列表&gt;</span><br><span class="line">class 类名</span><br><span class="line">&#123;</span><br><span class="line">      &#x2F;&#x2F;类的说明</span><br><span class="line">&#125;；</span><br></pre></td></tr></table></figure>
+<p>其中，template是关键字，&lt;参数名列表&gt;可以有多个参数，多个模板之间用逗号隔开<br>例如，可定义栈的类模板如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">template&lt;class T&gt;</span><br><span class="line">class Stack</span><br><span class="line">&#123;</span><br><span class="line">    public:</span><br><span class="line">        Stack(int MaxStackSize&#x3D;100);</span><br><span class="line">        Stack&lt;T&gt;&amp; push(const T&amp;x);</span><br><span class="line">        Stack&lt;T&gt; &amp; Pop(T&amp;x);</span><br><span class="line">    private:</span><br><span class="line">        int m_top;</span><br><span class="line">        int m_Maxsize;</span><br><span class="line">        T *m_stack;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+
+<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><p><a target="_blank" rel="noopener" href="https://blog.csdn.net/breakpoints_/article/details/80565452">https://blog.csdn.net/breakpoints_/article/details/80565452</a></p>
 
                 
             </div>
@@ -748,16 +750,16 @@
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+                本篇&nbsp;<i class="far fa-dot-circle"></i>
             </div>
             <div class="card">
-                <a href="/2021/03/07/hello-world/">
+                <a href="/2021/03/07/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
+                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="类模板的使用">
                         
-                        <span class="card-title">Hello World</span>
+                        <span class="card-title">类模板的使用</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -778,6 +780,7 @@
                         </span>
                     </div>
                 </div>
+
                 
             </div>
         </div>
