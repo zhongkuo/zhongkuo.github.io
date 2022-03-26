@@ -29,7 +29,8 @@
 
     <script src="/libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 5.4.0"></head>
+<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="玄月-钟阔的个人主页" type="application/atom+xml">
+</head>
 
 
 
@@ -454,6 +455,11 @@
                 
 
                 
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
+                    886
+                </div>
+                
 
                 
 
@@ -478,8 +484,10 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="什么是API？"><a href="#什么是API？" class="headerlink" title="什么是API？"></a>什么是API？</h2><h3 id="在学习了STM32的过程中，需要看开发手册，在开发手册里有一个地方讲解了sm32f1xx-hal-c源文件的描述：包含-HAL-通用-API（比如HAL-Init-HAL-DeInit-HAL-Delay-等）。这里我就在思考，什么是API？？"><a href="#在学习了STM32的过程中，需要看开发手册，在开发手册里有一个地方讲解了sm32f1xx-hal-c源文件的描述：包含-HAL-通用-API（比如HAL-Init-HAL-DeInit-HAL-Delay-等）。这里我就在思考，什么是API？？" class="headerlink" title="在学习了STM32的过程中，需要看开发手册，在开发手册里有一个地方讲解了sm32f1xx_hal.c源文件的描述：包含 HAL 通用 API（比如HAL_Init,HAL_DeInit,HAL_Delay 等）。这里我就在思考，什么是API？？"></a>在学习了STM32的过程中，需要看开发手册，在开发手册里有一个地方讲解了sm32f1xx_hal.c源文件的描述：包含 HAL 通用 API（比如HAL_Init,HAL_DeInit,HAL_Delay 等）。这里我就在思考，什么是API？？</h3><h3 id="在通过度娘的解答后，大体对其有了一定的了解，从定义来看API就是接口、通道，负责一个软件和其他软件的沟通，API接口就是完成和其他组件的交互的地方，而本质就是预先定义的函数。"><a href="#在通过度娘的解答后，大体对其有了一定的了解，从定义来看API就是接口、通道，负责一个软件和其他软件的沟通，API接口就是完成和其他组件的交互的地方，而本质就是预先定义的函数。" class="headerlink" title="在通过度娘的解答后，大体对其有了一定的了解，从定义来看API就是接口、通道，负责一个软件和其他软件的沟通，API接口就是完成和其他组件的交互的地方，而本质就是预先定义的函数。"></a>在通过度娘的解答后，大体对其有了一定的了解，从定义来看API就是接口、通道，负责一个软件和其他软件的沟通，API接口就是完成和其他组件的交互的地方，而本质就是预先定义的函数。</h3><h3 id="在我们的生活中有很多类似API的场景，例如："><a href="#在我们的生活中有很多类似API的场景，例如：" class="headerlink" title="在我们的生活中有很多类似API的场景，例如："></a>在我们的生活中有很多类似API的场景，例如：</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">电脑需要调用手机里面的信息，这时候你会拿一根数据线将电脑手机连接起来，电脑和手机上连接数据线的接口就是传说中的API接口。</span><br></pre></td></tr></table></figure>
-<h3 id="但这也只是一种比喻，要想真正了解API还是要去了解API的使用场景，这里依旧是举个例子"><a href="#但这也只是一种比喻，要想真正了解API还是要去了解API的使用场景，这里依旧是举个例子" class="headerlink" title="但这也只是一种比喻，要想真正了解API还是要去了解API的使用场景，这里依旧是举个例子"></a>但这也只是一种比喻，要想真正了解API还是要去了解API的使用场景，这里依旧是举个例子</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">【中铁大桥科研院】有一个自研的信息平台，用于管理业务数据。他们面临一个问题——尽管有信息平台，却因为系统的独立性，数据的上传和备份，需要依靠人工在excel里来回操作，效率很低。由于系统的开发周期长、成本高，桥科院将目光聚焦到现成的功能软件上。后来通过API将简道云直接插入公司数据库，数据可自动上传至信息平台上并统一展示；再通过webhook把数据推送到服务器，实现自动备份。在这一过程中，通过简道云配备的API接口，可以对接外部系统，让桥科院不用开发直接实现了数据自动上传、备份的功能。</span><br></pre></td></tr></table></figure>
+                <h2 id="什么是API？"><a href="#什么是API？" class="headerlink" title="什么是API？"></a>什么是API？</h2><h3 id="在学习了STM32的过程中，需要看开发手册，在开发手册里有一个地方讲解了sm32f1xx-hal-c源文件的描述：包含-HAL-通用-API（比如HAL-Init-HAL-DeInit-HAL-Delay-等）。这里我就在思考，什么是API？？"><a href="#在学习了STM32的过程中，需要看开发手册，在开发手册里有一个地方讲解了sm32f1xx-hal-c源文件的描述：包含-HAL-通用-API（比如HAL-Init-HAL-DeInit-HAL-Delay-等）。这里我就在思考，什么是API？？" class="headerlink" title="在学习了STM32的过程中，需要看开发手册，在开发手册里有一个地方讲解了sm32f1xx_hal.c源文件的描述：包含 HAL 通用 API（比如HAL_Init,HAL_DeInit,HAL_Delay 等）。这里我就在思考，什么是API？？"></a>在学习了STM32的过程中，需要看开发手册，在开发手册里有一个地方讲解了sm32f1xx_hal.c源文件的描述：包含 HAL 通用 API（比如HAL_Init,HAL_DeInit,HAL_Delay 等）。这里我就在思考，什么是API？？</h3><h3 id="在通过度娘的解答后，大体对其有了一定的了解，从定义来看API就是接口、通道，负责一个软件和其他软件的沟通，API接口就是完成和其他组件的交互的地方，而本质就是预先定义的函数。"><a href="#在通过度娘的解答后，大体对其有了一定的了解，从定义来看API就是接口、通道，负责一个软件和其他软件的沟通，API接口就是完成和其他组件的交互的地方，而本质就是预先定义的函数。" class="headerlink" title="在通过度娘的解答后，大体对其有了一定的了解，从定义来看API就是接口、通道，负责一个软件和其他软件的沟通，API接口就是完成和其他组件的交互的地方，而本质就是预先定义的函数。"></a>在通过度娘的解答后，大体对其有了一定的了解，从定义来看API就是接口、通道，负责一个软件和其他软件的沟通，API接口就是完成和其他组件的交互的地方，而本质就是预先定义的函数。</h3><h3 id="在我们的生活中有很多类似API的场景，例如："><a href="#在我们的生活中有很多类似API的场景，例如：" class="headerlink" title="在我们的生活中有很多类似API的场景，例如："></a>在我们的生活中有很多类似API的场景，例如：</h3><pre><code>电脑需要调用手机里面的信息，这时候你会拿一根数据线将电脑手机连接起来，电脑和手机上连接数据线的接口就是传说中的API接口。
+</code></pre>
+<h3 id="但这也只是一种比喻，要想真正了解API还是要去了解API的使用场景，这里依旧是举个例子"><a href="#但这也只是一种比喻，要想真正了解API还是要去了解API的使用场景，这里依旧是举个例子" class="headerlink" title="但这也只是一种比喻，要想真正了解API还是要去了解API的使用场景，这里依旧是举个例子"></a>但这也只是一种比喻，要想真正了解API还是要去了解API的使用场景，这里依旧是举个例子</h3><pre><code>【中铁大桥科研院】有一个自研的信息平台，用于管理业务数据。他们面临一个问题——尽管有信息平台，却因为系统的独立性，数据的上传和备份，需要依靠人工在excel里来回操作，效率很低。由于系统的开发周期长、成本高，桥科院将目光聚焦到现成的功能软件上。后来通过API将简道云直接插入公司数据库，数据可自动上传至信息平台上并统一展示；再通过webhook把数据推送到服务器，实现自动备份。在这一过程中，通过简道云配备的API接口，可以对接外部系统，让桥科院不用开发直接实现了数据自动上传、备份的功能。
+</code></pre>
 <h3 id="这就是API的使用。"><a href="#这就是API的使用。" class="headerlink" title="这就是API的使用。"></a>这就是API的使用。</h3><h3 id="譬如我们去办事，窗口就类似一个API，如果对于某一件不简单的事情，这个窗口能做到让我们“最多跑一次”，“只盖一枚章”，这个API就是不错的。但现实是跑一次就完成的时候还很困难，需要有关部门把内部各种流程、数据通道梳理清楚，让这个窗口很容易拿到各种数据帮助我们。所以说，设计很好的API，也并不容易。"><a href="#譬如我们去办事，窗口就类似一个API，如果对于某一件不简单的事情，这个窗口能做到让我们“最多跑一次”，“只盖一枚章”，这个API就是不错的。但现实是跑一次就完成的时候还很困难，需要有关部门把内部各种流程、数据通道梳理清楚，让这个窗口很容易拿到各种数据帮助我们。所以说，设计很好的API，也并不容易。" class="headerlink" title="譬如我们去办事，窗口就类似一个API，如果对于某一件不简单的事情，这个窗口能做到让我们“最多跑一次”，“只盖一枚章”，这个API就是不错的。但现实是跑一次就完成的时候还很困难，需要有关部门把内部各种流程、数据通道梳理清楚，让这个窗口很容易拿到各种数据帮助我们。所以说，设计很好的API，也并不容易。"></a>譬如我们去办事，窗口就类似一个API，如果对于某一件不简单的事情，这个窗口能做到让我们“最多跑一次”，“只盖一枚章”，这个API就是不错的。但现实是跑一次就完成的时候还很困难，需要有关部门把内部各种流程、数据通道梳理清楚，让这个窗口很容易拿到各种数据帮助我们。所以说，设计很好的API，也并不容易。</h3><h3 id="对于设计人员来说，更重视API包含设计和逻辑判断。假设物流中“货物”是数据，存放货物的“总仓库”是数据库，“店铺”是我们的网站、App。页面上显示的内容、数字，以及用户的操作请求和结果都是需要不停搬运的“货物”——数据，则负责调配分配打包的中转站就是API，店铺小哥直接从中转站取货就好。"><a href="#对于设计人员来说，更重视API包含设计和逻辑判断。假设物流中“货物”是数据，存放货物的“总仓库”是数据库，“店铺”是我们的网站、App。页面上显示的内容、数字，以及用户的操作请求和结果都是需要不停搬运的“货物”——数据，则负责调配分配打包的中转站就是API，店铺小哥直接从中转站取货就好。" class="headerlink" title="对于设计人员来说，更重视API包含设计和逻辑判断。假设物流中“货物”是数据，存放货物的“总仓库”是数据库，“店铺”是我们的网站、App。页面上显示的内容、数字，以及用户的操作请求和结果都是需要不停搬运的“货物”——数据，则负责调配分配打包的中转站就是API，店铺小哥直接从中转站取货就好。"></a>对于设计人员来说，更重视API包含设计和逻辑判断。假设物流中“货物”是数据，存放货物的“总仓库”是数据库，“店铺”是我们的网站、App。页面上显示的内容、数字，以及用户的操作请求和结果都是需要不停搬运的“货物”——数据，则负责调配分配打包的中转站就是API，店铺小哥直接从中转站取货就好。</h3><h3 id="对于软件提供商来说，留出API，让别的应用程序来调用，形成生态，软件才能发挥最大的价值，才能更有生命力。"><a href="#对于软件提供商来说，留出API，让别的应用程序来调用，形成生态，软件才能发挥最大的价值，才能更有生命力。" class="headerlink" title="对于软件提供商来说，留出API，让别的应用程序来调用，形成生态，软件才能发挥最大的价值，才能更有生命力。"></a>对于软件提供商来说，留出API，让别的应用程序来调用，形成生态，软件才能发挥最大的价值，才能更有生命力。</h3><h3 id="对于应用开发者来说，有了开放的API，就可以直接调用多家公司做好的功能来做自己的应用，不需要所有的事情都自己操刀，节省精力。云计算、共享经济时代，API就是技术服务商为客户提供服务的方法。"><a href="#对于应用开发者来说，有了开放的API，就可以直接调用多家公司做好的功能来做自己的应用，不需要所有的事情都自己操刀，节省精力。云计算、共享经济时代，API就是技术服务商为客户提供服务的方法。" class="headerlink" title="对于应用开发者来说，有了开放的API，就可以直接调用多家公司做好的功能来做自己的应用，不需要所有的事情都自己操刀，节省精力。云计算、共享经济时代，API就是技术服务商为客户提供服务的方法。"></a>对于应用开发者来说，有了开放的API，就可以直接调用多家公司做好的功能来做自己的应用，不需要所有的事情都自己操刀，节省精力。云计算、共享经济时代，API就是技术服务商为客户提供服务的方法。</h3><p>j<br>作者：简道云<br>链接：<a target="_blank" rel="noopener" href="https://www.zhihu.com/question/38594466/answer/487039892">https://www.zhihu.com/question/38594466/answer/487039892</a><br>来源：知乎<br>著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。</p>
 
                 
@@ -507,7 +515,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://example.com/2022/02/05/%E4%BD%95%E4%B8%BAAPI/">http://example.com/2022/02/05/%E4%BD%95%E4%B8%BAAPI/</a>
+                    <a href="http://example.com/2022/020558827.html">http://example.com/2022/020558827.html</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -676,10 +684,10 @@
                         <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
                     </ul>
                     <div id="alipay">
-                        <img src="/./photo/zhifubaoshoukuan.jpg" class="reward-img" alt="支付宝打赏二维码">
+                        <img src="/./source/medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
                     </div>
                     <div id="wechat">
-                        <img src="/./photo/weixinshoukuanma.png" class="reward-img" alt="微信打赏二维码">
+                        <img src="/source/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
                     </div>
                 </div>
             </div>
@@ -721,7 +729,7 @@
                 <i class="far fa-dot-circle"></i>&nbsp;本篇
             </div>
             <div class="card">
-                <a href="/2022/02/05/%E4%BD%95%E4%B8%BAAPI/">
+                <a href="/2022/020558827.html">
                     <div class="card-image">
                         
                         
@@ -767,7 +775,7 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/10/18/%E9%80%9A%E8%AF%86%E8%AF%BE01/">
+                <a href="/2021/101840983.html">
                     <div class="card-image">
                         
                         

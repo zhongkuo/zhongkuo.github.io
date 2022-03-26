@@ -29,7 +29,8 @@
 
     <script src="/libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 5.4.0"></head>
+<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="玄月-钟阔的个人主页" type="application/atom+xml">
+</head>
 
 
 
@@ -454,6 +455,11 @@
                 
 
                 
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
+                    669
+                </div>
+                
 
                 
 
@@ -480,7 +486,93 @@
             <div id="articleContent">
                 <h2 id="首先对这种转换方法进行一些啰嗦，详细的代码会在下面给出。"><a href="#首先对这种转换方法进行一些啰嗦，详细的代码会在下面给出。" class="headerlink" title="首先对这种转换方法进行一些啰嗦，详细的代码会在下面给出。"></a>首先对这种转换方法进行一些啰嗦，详细的代码会在下面给出。</h2><hr>
 <h3 id="（由于本人也是一个小白，所以只能记录一些自己的认识，不喜勿喷）栈是一种线性表，它的特性是只能从一端进入，也只能从同一端出来，其他的地方都是封死的。还有就是在形参、实参中究竟传地址还是直接传值的问题就要看你将要进行的操作是什么类型，如果是要对传入的东西进行修改（压栈，出栈…），则传地址；如果只进行测试一类的操作，则可以传值。对了，在进行线性表一类要在栈中开辟空间的操作结束后一定要记得释放空间，不然你的电脑早晚有一天……懂得懂得"><a href="#（由于本人也是一个小白，所以只能记录一些自己的认识，不喜勿喷）栈是一种线性表，它的特性是只能从一端进入，也只能从同一端出来，其他的地方都是封死的。还有就是在形参、实参中究竟传地址还是直接传值的问题就要看你将要进行的操作是什么类型，如果是要对传入的东西进行修改（压栈，出栈…），则传地址；如果只进行测试一类的操作，则可以传值。对了，在进行线性表一类要在栈中开辟空间的操作结束后一定要记得释放空间，不然你的电脑早晚有一天……懂得懂得" class="headerlink" title="（由于本人也是一个小白，所以只能记录一些自己的认识，不喜勿喷）栈是一种线性表，它的特性是只能从一端进入，也只能从同一端出来，其他的地方都是封死的。还有就是在形参、实参中究竟传地址还是直接传值的问题就要看你将要进行的操作是什么类型，如果是要对传入的东西进行修改（压栈，出栈…），则传地址；如果只进行测试一类的操作，则可以传值。对了，在进行线性表一类要在栈中开辟空间的操作结束后一定要记得释放空间，不然你的电脑早晚有一天……懂得懂得"></a>（由于本人也是一个小白，所以只能记录一些自己的认识，不喜勿喷）栈是一种线性表，它的特性是只能从一端进入，也只能从同一端出来，其他的地方都是封死的。还有就是在形参、实参中究竟传地址还是直接传值的问题就要看你将要进行的操作是什么类型，如果是要对传入的东西进行修改（压栈，出栈…），则传地址；如果只进行测试一类的操作，则可以传值。对了，在进行线性表一类要在栈中开辟空间的操作结束后一定要记得释放空间，不然你的电脑早晚有一天……懂得懂得</h3><hr>
-<h2 id="大家心心念念的代码来了（此代码在win10系统下可以运行，亲测）"><a href="#大家心心念念的代码来了（此代码在win10系统下可以运行，亲测）" class="headerlink" title="大家心心念念的代码来了（此代码在win10系统下可以运行，亲测）"></a>大家心心念念的代码来了（此代码在win10系统下可以运行，亲测）</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br></pre></td><td class="code"><pre><span class="line">#include &lt;stdio.h&gt;</span><br><span class="line">#include &lt;stdlib.h&gt;</span><br><span class="line">#include &lt;math.h&gt;</span><br><span class="line"></span><br><span class="line">#define STACK_INIT_SIZE 20      &#x2F;&#x2F;定义栈的最大容量</span><br><span class="line">#define STACKINEMENT 10        &#x2F;&#x2F;每次容量不够时添加10个空间</span><br><span class="line"></span><br><span class="line">typedef char Elemtype;         &#x2F;&#x2F;定义一个类似char的新的Elemtype</span><br><span class="line"></span><br><span class="line">typedef struct             &#x2F;&#x2F;typedef 是为一个类型起新名字。</span><br><span class="line">&#123;</span><br><span class="line">    Elemtype *base;</span><br><span class="line">    Elemtype *top;</span><br><span class="line">    int stackSize;           &#x2F;&#x2F;栈的当前容量</span><br><span class="line">&#125;sqStack;</span><br><span class="line"></span><br><span class="line">void Initstack(sqStack *s)      &#x2F;&#x2F;创立一个栈,注意判断能否建立成功，初始化</span><br><span class="line">&#123;</span><br><span class="line">    s-&gt;base&#x3D;(Elemtype*)malloc(STACK_INIT_SIZE*sizeof(Elemtype));</span><br><span class="line">    if(!s-&gt;base)</span><br><span class="line">    &#123;</span><br><span class="line">        exit(0);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    s-&gt;top&#x3D;s-&gt;base;</span><br><span class="line">    s-&gt;stackSize&#x3D;STACK_INIT_SIZE;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">void push(sqStack*s,Elemtype e)      &#x2F;&#x2F;Elemtype的作用是什么  进行压栈操作</span><br><span class="line">&#123;</span><br><span class="line">    if(s-&gt;top-s-&gt;base&gt;&#x3D;s-&gt;stackSize)</span><br><span class="line">    &#123;</span><br><span class="line">        s-&gt;base&#x3D;(Elemtype*)realloc(s-&gt;base,(s-&gt;stackSize+STACKINEMENT)*sizeof(Elemtype));</span><br><span class="line">        if(!s-&gt;base)</span><br><span class="line">        &#123;</span><br><span class="line">            exit(0);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    *(s-&gt;top)&#x3D;e;        &#x2F;&#x2F;运用指针进行栈的压入</span><br><span class="line">    s-&gt;top++;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">void POp(sqStack*s,Elemtype *e)       &#x2F;&#x2F;出栈操作</span><br><span class="line">&#123;</span><br><span class="line">    if(s-&gt;top&#x3D;&#x3D;s-&gt;base)</span><br><span class="line">    &#123;</span><br><span class="line">        return;</span><br><span class="line">    &#125;</span><br><span class="line">    *e&#x3D;*--(s-&gt;top);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">int StackLen(sqStack s)    &#x2F;&#x2F;返回栈的当前长度</span><br><span class="line">&#123;</span><br><span class="line">    return(s.top-s.base);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">    Elemtype c;</span><br><span class="line">    sqStack s;</span><br><span class="line">    Initstack(&amp;s);</span><br><span class="line"></span><br><span class="line">    int len,i,sum&#x3D;0;</span><br><span class="line">    printf(&quot;请输入二进制数，输入#号表示结束!\n&quot;);</span><br><span class="line">    scanf(&quot;%c&quot;,&amp;c);</span><br><span class="line">    while(c!&#x3D;&#39;#&#39;)</span><br><span class="line">    &#123;</span><br><span class="line">        push(&amp;s,c);</span><br><span class="line">        scanf(&quot;%c&quot;,&amp;c);</span><br><span class="line">    &#125;</span><br><span class="line">    getchar();</span><br><span class="line"></span><br><span class="line">    len&#x3D;StackLen(s);</span><br><span class="line">    printf(&quot;栈的当前长度是:%d\n&quot;,len);</span><br><span class="line"></span><br><span class="line">    for(i&#x3D;0;i&lt;len;i++)</span><br><span class="line">    &#123;</span><br><span class="line">        POp(&amp;s,&amp;c);</span><br><span class="line">        sum&#x3D;sum+(c-48)*pow(2,i);       &#x2F;&#x2F;pow函数作用为2的i次幂，头文件是math.h</span><br><span class="line">    &#125;</span><br><span class="line">    printf(&quot;转化后的函数为：%d&quot;,sum);</span><br><span class="line"></span><br><span class="line">    free(&amp;s);</span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h2 id="大家心心念念的代码来了（此代码在win10系统下可以运行，亲测）"><a href="#大家心心念念的代码来了（此代码在win10系统下可以运行，亲测）" class="headerlink" title="大家心心念念的代码来了（此代码在win10系统下可以运行，亲测）"></a>大家心心念念的代码来了（此代码在win10系统下可以运行，亲测）</h2><pre><code>#include &lt;stdio.h&gt;
+#include &lt;stdlib.h&gt;
+#include &lt;math.h&gt;
+
+#define STACK_INIT_SIZE 20      //定义栈的最大容量
+#define STACKINEMENT 10        //每次容量不够时添加10个空间
+
+typedef char Elemtype;         //定义一个类似char的新的Elemtype
+
+typedef struct             //typedef 是为一个类型起新名字。
+&#123;
+    Elemtype *base;
+    Elemtype *top;
+    int stackSize;           //栈的当前容量
+&#125;sqStack;
+
+void Initstack(sqStack *s)      //创立一个栈,注意判断能否建立成功，初始化
+&#123;
+    s-&gt;base=(Elemtype*)malloc(STACK_INIT_SIZE*sizeof(Elemtype));
+    if(!s-&gt;base)
+    &#123;
+        exit(0);
+    &#125;
+
+    s-&gt;top=s-&gt;base;
+    s-&gt;stackSize=STACK_INIT_SIZE;
+&#125;
+
+void push(sqStack*s,Elemtype e)      //Elemtype的作用是什么  进行压栈操作
+&#123;
+    if(s-&gt;top-s-&gt;base&gt;=s-&gt;stackSize)
+    &#123;
+        s-&gt;base=(Elemtype*)realloc(s-&gt;base,(s-&gt;stackSize+STACKINEMENT)*sizeof(Elemtype));
+        if(!s-&gt;base)
+        &#123;
+            exit(0);
+        &#125;
+    &#125;
+
+    *(s-&gt;top)=e;        //运用指针进行栈的压入
+    s-&gt;top++;
+&#125;
+
+void POp(sqStack*s,Elemtype *e)       //出栈操作
+&#123;
+    if(s-&gt;top==s-&gt;base)
+    &#123;
+        return;
+    &#125;
+    *e=*--(s-&gt;top);
+&#125;
+
+int StackLen(sqStack s)    //返回栈的当前长度
+&#123;
+    return(s.top-s.base);
+&#125;
+
+int main()
+&#123;
+    Elemtype c;
+    sqStack s;
+    Initstack(&amp;s);
+
+    int len,i,sum=0;
+    printf(&quot;请输入二进制数，输入#号表示结束!\n&quot;);
+    scanf(&quot;%c&quot;,&amp;c);
+    while(c!=&#39;#&#39;)
+    &#123;
+        push(&amp;s,c);
+        scanf(&quot;%c&quot;,&amp;c);
+    &#125;
+    getchar();
+
+    len=StackLen(s);
+    printf(&quot;栈的当前长度是:%d\n&quot;,len);
+
+    for(i=0;i&lt;len;i++)
+    &#123;
+        POp(&amp;s,&amp;c);
+        sum=sum+(c-48)*pow(2,i);       //pow函数作用为2的i次幂，头文件是math.h
+    &#125;
+    printf(&quot;转化后的函数为：%d&quot;,sum);
+
+    free(&amp;s);
+    return 0;
+&#125;
+</code></pre>
 <h2 id="malloc与realloc的区别"><a href="#malloc与realloc的区别" class="headerlink" title="malloc与realloc的区别"></a>malloc与realloc的区别</h2><p>realloc函数其实就是对malloc的增加再次封装。本人总结malloc常用于空间的开辟，而realloc函数以开发的空间不足而再次开辟</p>
 
                 
@@ -508,7 +600,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://example.com/2021/04/04/%E7%94%A8%E6%A0%88%E5%B0%86%E4%BA%8C%E8%BF%9B%E5%88%B6%E8%BD%AC%E5%8C%96%E6%88%90%E5%8D%81%E8%BF%9B%E5%88%B6-C%E8%AF%AD%E8%A8%80/">http://example.com/2021/04/04/%E7%94%A8%E6%A0%88%E5%B0%86%E4%BA%8C%E8%BF%9B%E5%88%B6%E8%BD%AC%E5%8C%96%E6%88%90%E5%8D%81%E8%BF%9B%E5%88%B6-C%E8%AF%AD%E8%A8%80/</a>
+                    <a href="http://example.com/2021/040428849.html">http://example.com/2021/040428849.html</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -677,10 +769,10 @@
                         <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
                     </ul>
                     <div id="alipay">
-                        <img src="/./photo/zhifubaoshoukuan.jpg" class="reward-img" alt="支付宝打赏二维码">
+                        <img src="/./source/medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
                     </div>
                     <div id="wechat">
-                        <img src="/./photo/weixinshoukuanma.png" class="reward-img" alt="微信打赏二维码">
+                        <img src="/source/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
                     </div>
                 </div>
             </div>
@@ -721,7 +813,7 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2021/05/25/%E7%B1%BB%E6%A8%A1%E6%9D%BF%E7%9A%84%E4%BD%BF%E7%94%A8/">
+                <a href="/2021/052534483.html">
                     <div class="card-image">
                         
                         
@@ -766,7 +858,7 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/03/08/Markdown/">
+                <a href="/2021/030817683.html">
                     <div class="card-image">
                         
                         

@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="二叉链表的建立与遍历, 玄月-钟阔的个人主页">
+    <meta name="keywords" content="通识课01, 玄月-钟阔的个人主页">
     <meta name="description" content="不要等到明天，今天就行动起来！">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>二叉链表的建立与遍历 | 玄月-钟阔的个人主页</title>
+    <title>通识课01 | 玄月-钟阔的个人主页</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -29,7 +29,8 @@
 
     <script src="/libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 5.4.0"></head>
+<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="玄月-钟阔的个人主页" type="application/atom+xml">
+</head>
 
 
 
@@ -310,12 +311,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/17.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/11.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">二叉链表的建立与遍历</h1>
+                    <h1 class="description center-align post-title">通识课01</h1>
                 </div>
             </div>
         </div>
@@ -431,8 +432,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/">
-                                <span class="chip bg-color">数据结构</span>
+                            <a href="/tags/%E9%80%9A%E8%AF%86%E8%AF%BE/">
+                                <span class="chip bg-color">通识课</span>
                             </a>
                         
                     </div>
@@ -447,12 +448,17 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-05-28
+                    2021-10-18
                 </div>
                 
 
                 
 
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
+                    457
+                </div>
                 
 
                 
@@ -478,9 +484,40 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="二叉链表的建立与遍历"><a href="#二叉链表的建立与遍历" class="headerlink" title="二叉链表的建立与遍历"></a>二叉链表的建立与遍历</h2><h3 id="本人的数据结构实验题目，其主要是建立一棵含有n个结点的二叉树，采用二叉链表存储，实现前序中序后序遍历该二叉树。"><a href="#本人的数据结构实验题目，其主要是建立一棵含有n个结点的二叉树，采用二叉链表存储，实现前序中序后序遍历该二叉树。" class="headerlink" title="本人的数据结构实验题目，其主要是建立一棵含有n个结点的二叉树，采用二叉链表存储，实现前序中序后序遍历该二叉树。"></a>本人的数据结构实验题目，其主要是建立一棵含有n个结点的二叉树，采用二叉链表存储，实现前序中序后序遍历该二叉树。</h3><p>其源码如下：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br></pre></td><td class="code"><pre><span class="line">#include&lt;stdio.h&gt;</span><br><span class="line">#include&lt;stdlib.h&gt;</span><br><span class="line">typedef char TElemType;     &#x2F;&#x2F;创建TElemType类型名</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">typedef struct BiTNode &#123;     &#x2F;&#x2F;定义树的结点</span><br><span class="line">	TElemType data;</span><br><span class="line">	struct BiTNode* lchild, * rchild; </span><br><span class="line">&#125;BiTNode, * BiTree;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F;创建二叉链表</span><br><span class="line">BiTree Create_BiTree(BiTree&amp; bt) &#123;</span><br><span class="line">	char ch;</span><br><span class="line">	scanf_s(&quot;%c&quot;, &amp;ch);</span><br><span class="line">	if (ch &#x3D;&#x3D; &#39;#&#39;) bt &#x3D; NULL;       &#x2F;&#x2F;当输入#号时其相应结节点赋值为空</span><br><span class="line">	else &#123;</span><br><span class="line">		bt &#x3D; (BiTNode*)malloc(sizeof(BiTNode));     &#x2F;&#x2F;开辟新的结点空间作为树结点</span><br><span class="line">		bt-&gt;data &#x3D; ch;</span><br><span class="line">		&#x2F;&#x2F;printf(&quot;请输入左结点&quot;);</span><br><span class="line">		Create_BiTree(bt-&gt;lchild);      &#x2F;&#x2F;运用递归的方式存储数据，构建二叉树</span><br><span class="line">		&#x2F;&#x2F;printf(&quot;请输入右结点&quot;);</span><br><span class="line">		Create_BiTree(bt-&gt;rchild);</span><br><span class="line">	&#125;</span><br><span class="line">	return bt;</span><br><span class="line">&#125;</span><br><span class="line">&#x2F;&#x2F;先序遍历 </span><br><span class="line">void preorder(BiTree bt) &#123;</span><br><span class="line">	if (bt) &#123;</span><br><span class="line">		printf(&quot;%c&quot;, bt-&gt;data);</span><br><span class="line">		preorder(bt-&gt;lchild);</span><br><span class="line">		preorder(bt-&gt;rchild);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line">&#x2F;&#x2F;中序遍历</span><br><span class="line">void inorder(BiTree bt) &#123;</span><br><span class="line">	if (bt) &#123;</span><br><span class="line">		preorder(bt-&gt;lchild);</span><br><span class="line">		printf(&quot;%c&quot;, bt-&gt;data);</span><br><span class="line">		preorder(bt-&gt;rchild);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line">&#x2F;&#x2F;后序遍历</span><br><span class="line">void postorder(BiTree bt) &#123;</span><br><span class="line">	if (bt) &#123;</span><br><span class="line">		preorder(bt-&gt;lchild);</span><br><span class="line">		preorder(bt-&gt;rchild);</span><br><span class="line">		printf(&quot;%c&quot;, bt-&gt;data);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line">void CMD_select() &#123;</span><br><span class="line">	printf(&quot;\n*************二叉链表的建立及遍历*****************&quot;);</span><br><span class="line">	printf(&quot;\n1::二叉链表的前序遍历,2:二叉链表的中序遍历,3:二叉链表的后序遍历，4退出程序\n&quot;);</span><br><span class="line">	printf(&quot;请输入数字:&quot;);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">int main() &#123;</span><br><span class="line">	int n, cmd;</span><br><span class="line">	BiTree bt;</span><br><span class="line">	printf(&quot;请输入对应字符串：&quot;);</span><br><span class="line">	bt &#x3D; Create_BiTree(bt);</span><br><span class="line">	printf(&quot;二叉链表建立成功！！！&quot;);</span><br><span class="line">	CMD_select();</span><br><span class="line">	scanf_s(&quot;%d&quot;, &amp;cmd);</span><br><span class="line">	while (cmd !&#x3D; 4) &#123;</span><br><span class="line">		switch (cmd) &#123;</span><br><span class="line">		case 1:&#x2F;&#x2F;先序遍历 </span><br><span class="line">			printf(&quot;序遍历结果：&quot;);</span><br><span class="line">			preorder(bt);</span><br><span class="line">			CMD_select();</span><br><span class="line">			scanf_s(&quot;%d&quot;, &amp;cmd);</span><br><span class="line">			break;</span><br><span class="line">		case 2:&#x2F;&#x2F;中序遍历 </span><br><span class="line">			printf(&quot;中序遍历结果：&quot;);</span><br><span class="line">			inorder(bt);</span><br><span class="line">			CMD_select();</span><br><span class="line">			scanf_s(&quot;%d&quot;, &amp;cmd);</span><br><span class="line">			break;</span><br><span class="line">		case 3:&#x2F;&#x2F;后序遍历 </span><br><span class="line">			printf(&quot;后序遍历结果：&quot;);</span><br><span class="line">			postorder(bt);</span><br><span class="line">			CMD_select();</span><br><span class="line">			scanf_s(&quot;%d&quot;, &amp;cmd);</span><br><span class="line">			break;</span><br><span class="line">		default:printf(&quot;命令输入错误&quot;);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	return 0;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<h4 id="在这里需要注意的是在控制台建立二叉树的时候，如果一个结点想设置为叶子结点，则该结点的左右孩子均需设置为‘-’表示为空。"><a href="#在这里需要注意的是在控制台建立二叉树的时候，如果一个结点想设置为叶子结点，则该结点的左右孩子均需设置为‘-’表示为空。" class="headerlink" title="在这里需要注意的是在控制台建立二叉树的时候，如果一个结点想设置为叶子结点，则该结点的左右孩子均需设置为‘#’表示为空。"></a>在这里需要注意的是在控制台建立二叉树的时候，如果一个结点想设置为叶子结点，则该结点的左右孩子均需设置为‘#’表示为空。</h4><p><img src="../favicon.png" alt="程序运行结果如图所示"></p>
+                <h3 id="第一节通识课虽然只讲了些比较基础的东西，但对于我来说也算是受益匪浅了。"><a href="#第一节通识课虽然只讲了些比较基础的东西，但对于我来说也算是受益匪浅了。" class="headerlink" title="第一节通识课虽然只讲了些比较基础的东西，但对于我来说也算是受益匪浅了。"></a>第一节通识课虽然只讲了些比较基础的东西，但对于我来说也算是受益匪浅了。</h3><hr>
+<h3 id="这节课的内容可以分为三大部分：计算机基础、vscode、markdown。"><a href="#这节课的内容可以分为三大部分：计算机基础、vscode、markdown。" class="headerlink" title="这节课的内容可以分为三大部分：计算机基础、vscode、markdown。"></a>这节课的内容可以分为三大部分：计算机基础、vscode、markdown。</h3><h2 id="计算机基础"><a href="#计算机基础" class="headerlink" title="计算机基础"></a>计算机基础</h2><ol>
+<li>文件<blockquote>
+<p>使用计算机的每时每刻都是在和文件打交道</p>
+</blockquote>
+</li>
+</ol>
+<blockquote>
+<p>这里讲了一下分盘以及一些作为小白的我不常用的快捷键，例如：<code>win+e</code>（打开文件资源管理器）以及一些卸载程序的方法</p>
+</blockquote>
+<blockquote>
+<p>还有一个小部分就是内存与储存空间的区别</p>
+</blockquote>
+<ul>
+<li>速度上的区别：内存存取速度快，但是贵，断电数据丢失。硬盘存取速度慢，但便宜，断电数据不丢失。</li>
+<li>使用上的区别：打开浏览器，将来可能频繁用到代码(汇编码)，操作系统会从硬盘中读取到内存里，方便中央处理器(CPU)执行。因为内存读取速度比硬盘快。</li>
+<li>假如把电脑比作人的大脑，内存是你现在立即就能想到的东西，存储空间就是需要提示才能想起来的东西。</li>
+</ul>
+<ol start="2">
+<li>浏览器<blockquote>
+<p>浏览器部分必然少不了各种快捷键,还有就是讲了搜索引擎与浏览器的区别</p>
+</blockquote>
+</li>
+</ol>
+<ul>
+<li>搜索引擎是一个网址</li>
+<li>浏览器是渲染代码并将其显示出来</li>
+</ul>
+<h2 id="vscode"><a href="#vscode" class="headerlink" title="vscode"></a>vscode</h2><h3 id="听了孟老板的讲解-我也愿称vscode为天下第一的代码编辑器"><a href="#听了孟老板的讲解-我也愿称vscode为天下第一的代码编辑器" class="headerlink" title="听了孟老板的讲解,我也愿称vscode为天下第一的代码编辑器"></a>听了孟老板的讲解,我也愿称vscode为天下第一的代码编辑器</h3><blockquote>
+<p>给我一个只安装vscode的电脑,几乎可以做到所有的事情,包括:qq聊天、逛b站、写代码、玩游戏、连接服务器挂项目…</p>
+</blockquote>
+<h2 id="优秀的笔记语言–MakeDown"><a href="#优秀的笔记语言–MakeDown" class="headerlink" title="优秀的笔记语言–MakeDown"></a>优秀的笔记语言–MakeDown</h2><blockquote>
+<p>关于MakeDown部分我已经在以前的博客中写过了,感兴趣的朋友可以去看看.</p>
+</blockquote>
 
                 
             </div>
@@ -507,7 +544,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://example.com/2021/05/28/%E4%BA%8C%E5%8F%89%E9%93%BE%E8%A1%A8%E7%9A%84%E5%BB%BA%E7%AB%8B%E4%B8%8E%E9%81%8D%E5%8E%86/">http://example.com/2021/05/28/%E4%BA%8C%E5%8F%89%E9%93%BE%E8%A1%A8%E7%9A%84%E5%BB%BA%E7%AB%8B%E4%B8%8E%E9%81%8D%E5%8E%86/</a>
+                    <a href="http://example.com/2021/101840983.html">http://example.com/2021/101840983.html</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -545,8 +582,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/">
-                                    <span class="chip bg-color">数据结构</span>
+                                <a href="/tags/%E9%80%9A%E8%AF%86%E8%AF%BE/">
+                                    <span class="chip bg-color">通识课</span>
                                 </a>
                             
                         </div>
@@ -676,10 +713,10 @@
                         <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
                     </ul>
                     <div id="alipay">
-                        <img src="/./photo/zhifubaoshoukuan.jpg" class="reward-img" alt="支付宝打赏二维码">
+                        <img src="/./source/medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
                     </div>
                     <div id="wechat">
-                        <img src="/./photo/weixinshoukuanma.png" class="reward-img" alt="微信打赏二维码">
+                        <img src="/source/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
                     </div>
                 </div>
             </div>
@@ -720,7 +757,52 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2021/07/30/%E6%B5%85%E8%B0%88cookie%E4%B8%8ESession/">
+                <a href="/2022/020558827.html">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="何为API">
+                        
+                        <span class="card-title">何为API</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2022-02-05
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            zhongkuo
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/STM32/">
+                        <span class="chip bg-color">STM32</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2021/073050406.html">
                     <div class="card-image">
                         
                         
@@ -736,9 +818,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-07-30
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-07-30
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -752,51 +834,6 @@
                     
                     <a href="/tags/JSP-PHP%E5%BC%80%E5%8F%91/">
                         <span class="chip bg-color">JSP PHP开发</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2021/05/25/%E7%B1%BB%E6%A8%A1%E6%9D%BF%E7%9A%84%E4%BD%BF%E7%94%A8/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="类模板的使用“">
-                        
-                        <span class="card-title">类模板的使用“</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-05-25
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-user fa-fw"></i>
-                            zhongkuo
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1C/">
-                        <span class="chip bg-color">面向对象C++</span>
                     </a>
                     
                 </div>

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>玄月-钟阔的个人主页</title>
+  
+  <subtitle>跬步</subtitle>
+  <link href="http://example.com/atom.xml" rel="self"/>
+  
+  <link href="http://example.com/"/>
+  <updated>2022-02-26T07:28:32.510Z</updated>
+  <id>http://example.com/</id>
+  
+  <author>
+    <name>zhongkuo</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>何为API</title>
+    <link href="http://example.com/2022/020558827.html"/>
+    <id>http://example.com/2022/020558827.html</id>
+    <published>2022-02-05T12:11:20.000Z</published>
+    <updated>2022-02-26T07:28:32.510Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;什么是API？&quot;&gt;&lt;a href=&quot;#什么是API？&quot; class=&quot;headerlink&quot; title=&quot;什么是API？&quot;&gt;&lt;/a&gt;什么是API？&lt;/h2&gt;&lt;h3</summary>
+        
+      
+    
+    
+    
+    
+    <category term="STM32" scheme="http://example.com/tags/STM32/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>通识课01</title>
+    <link href="http://example.com/2021/101840983.html"/>
+    <id>http://example.com/2021/101840983.html</id>
+    <published>2021-10-18T03:10:16.000Z</published>
+    <updated>2021-10-18T04:03:27.187Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;第一节通识课虽然只讲了些比较基础的东西，但对于我来说也算是受益匪浅了。&quot;&gt;&lt;a href=&quot;#第一节通识课虽然只讲了些比较基础的东西，但对于我来说也算是受益匪浅了。&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="通识课" scheme="http://example.com/tags/%E9%80%9A%E8%AF%86%E8%AF%BE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>浅谈cookie与Session</title>
+    <link href="http://example.com/2021/073050406.html"/>
+    <id>http://example.com/2021/073050406.html</id>
+    <published>2021-07-30T11:54:28.000Z</published>
+    <updated>2021-07-30T12:27:42.116Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;浅谈Cookie与Session&quot;&gt;&lt;a href=&quot;#浅谈Cookie与Session&quot; class=&quot;headerlink&quot; title=&quot;浅谈Cookie与Session&quot;&gt;&lt;/a&gt;浅谈Cookie与Session&lt;/h2&gt;&lt;br/&gt;
+
+&lt;h4</summary>
+        
+      
+    
+    
+    
+    
+    <category term="JSP PHP开发" scheme="http://example.com/tags/JSP-PHP%E5%BC%80%E5%8F%91/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>二叉链表的建立与遍历</title>
+    <link href="http://example.com/2021/052818044.html"/>
+    <id>http://example.com/2021/052818044.html</id>
+    <published>2021-05-28T08:07:00.000Z</published>
+    <updated>2021-07-25T02:48:44.094Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;二叉链表的建立与遍历&quot;&gt;&lt;a href=&quot;#二叉链表的建立与遍历&quot; class=&quot;headerlink&quot; title=&quot;二叉链表的建立与遍历&quot;&gt;&lt;/a&gt;二叉链表的建立与遍历&lt;/h2&gt;&lt;h3</summary>
+        
+      
+    
+    
+    
+    
+    <category term="数据结构" scheme="http://example.com/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>类模板的使用“</title>
+    <link href="http://example.com/2021/052534483.html"/>
+    <id>http://example.com/2021/052534483.html</id>
+    <published>2021-05-25T07:36:26.000Z</published>
+    <updated>2021-05-29T06:42:46.885Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;类模板的定义&quot;&gt;&lt;a href=&quot;#类模板的定义&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="面向对象C++" scheme="http://example.com/tags/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>用栈将二进制转化成十进制(C语言)</title>
+    <link href="http://example.com/2021/040428849.html"/>
+    <id>http://example.com/2021/040428849.html</id>
+    <published>2021-04-04T01:54:47.000Z</published>
+    <updated>2021-05-27T05:15:26.368Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;首先对这种转换方法进行一些啰嗦，详细的代码会在下面给出。&quot;&gt;&lt;a href=&quot;#首先对这种转换方法进行一些啰嗦，详细的代码会在下面给出。&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="数据结构" scheme="http://example.com/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Markdown</title>
+    <link href="http://example.com/2021/030817683.html"/>
+    <id>http://example.com/2021/030817683.html</id>
+    <published>2021-03-08T10:40:24.000Z</published>
+    <updated>2021-03-17T09:30:25.188Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;学习使用makedown语法写博客&quot;&gt;&lt;a href=&quot;#学习使用makedown语法写博客&quot; class=&quot;headerlink&quot; title=&quot;学习使用makedown语法写博客&quot;&gt;&lt;/a&gt;学习使用makedown语法写博客&lt;/h1&gt;&lt;hr&gt;
+&lt;h2</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+</feed>

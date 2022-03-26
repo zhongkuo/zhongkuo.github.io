@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>何为API</title>
+      <link href="/2022/020558827.html"/>
+      <url>/2022/020558827.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="什么是API？"><a href="#什么是API？" class="headerlink" title="什么是API？"></a>什么是API？</h2><h3 id="在学习了STM32的过程中，需要看开发手册，在开发手册里有一个地方讲解了sm32f1xx-hal-c源文件的描述：包含-HAL-通用-API（比如HAL-Init-HAL-DeInit-HAL-Delay-等）。这里我就在思考，什么是API？？"><a href="#在学习了STM32的过程中，需要看开发手册，在开发手册里有一个地方讲解了sm32f1xx-hal-c源文件的描述：包含-HAL-通用-API（比如HAL-Init-HAL-DeInit-HAL-Delay-等）。这里我就在思考，什么是API？？" class="headerlink" title="在学习了STM32的过程中，需要看开发手册，在开发手册里有一个地方讲解了sm32f1xx_hal.c源文件的描述：包含 HAL 通用 API（比如HAL_Init,HAL_DeInit,HAL_Delay 等）。这里我就在思考，什么是API？？"></a>在学习了STM32的过程中，需要看开发手册，在开发手册里有一个地方讲解了sm32f1xx_hal.c源文件的描述：包含 HAL 通用 API（比如HAL_Init,HAL_DeInit,HAL_Delay 等）。这里我就在思考，什么是API？？</h3><h3 id="在通过度娘的解答后，大体对其有了一定的了解，从定义来看API就是接口、通道，负责一个软件和其他软件的沟通，API接口就是完成和其他组件的交互的地方，而本质就是预先定义的函数。"><a href="#在通过度娘的解答后，大体对其有了一定的了解，从定义来看API就是接口、通道，负责一个软件和其他软件的沟通，API接口就是完成和其他组件的交互的地方，而本质就是预先定义的函数。" class="headerlink" title="在通过度娘的解答后，大体对其有了一定的了解，从定义来看API就是接口、通道，负责一个软件和其他软件的沟通，API接口就是完成和其他组件的交互的地方，而本质就是预先定义的函数。"></a>在通过度娘的解答后，大体对其有了一定的了解，从定义来看API就是接口、通道，负责一个软件和其他软件的沟通，API接口就是完成和其他组件的交互的地方，而本质就是预先定义的函数。</h3><h3 id="在我们的生活中有很多类似API的场景，例如："><a href="#在我们的生活中有很多类似API的场景，例如：" class="headerlink" title="在我们的生活中有很多类似API的场景，例如："></a>在我们的生活中有很多类似API的场景，例如：</h3><pre><code>电脑需要调用手机里面的信息，这时候你会拿一根数据线将电脑手机连接起来，电脑和手机上连接数据线的接口就是传说中的API接口。</code></pre><h3 id="但这也只是一种比喻，要想真正了解API还是要去了解API的使用场景，这里依旧是举个例子"><a href="#但这也只是一种比喻，要想真正了解API还是要去了解API的使用场景，这里依旧是举个例子" class="headerlink" title="但这也只是一种比喻，要想真正了解API还是要去了解API的使用场景，这里依旧是举个例子"></a>但这也只是一种比喻，要想真正了解API还是要去了解API的使用场景，这里依旧是举个例子</h3><pre><code>【中铁大桥科研院】有一个自研的信息平台，用于管理业务数据。他们面临一个问题——尽管有信息平台，却因为系统的独立性，数据的上传和备份，需要依靠人工在excel里来回操作，效率很低。由于系统的开发周期长、成本高，桥科院将目光聚焦到现成的功能软件上。后来通过API将简道云直接插入公司数据库，数据可自动上传至信息平台上并统一展示；再通过webhook把数据推送到服务器，实现自动备份。在这一过程中，通过简道云配备的API接口，可以对接外部系统，让桥科院不用开发直接实现了数据自动上传、备份的功能。</code></pre><h3 id="这就是API的使用。"><a href="#这就是API的使用。" class="headerlink" title="这就是API的使用。"></a>这就是API的使用。</h3><h3 id="譬如我们去办事，窗口就类似一个API，如果对于某一件不简单的事情，这个窗口能做到让我们“最多跑一次”，“只盖一枚章”，这个API就是不错的。但现实是跑一次就完成的时候还很困难，需要有关部门把内部各种流程、数据通道梳理清楚，让这个窗口很容易拿到各种数据帮助我们。所以说，设计很好的API，也并不容易。"><a href="#譬如我们去办事，窗口就类似一个API，如果对于某一件不简单的事情，这个窗口能做到让我们“最多跑一次”，“只盖一枚章”，这个API就是不错的。但现实是跑一次就完成的时候还很困难，需要有关部门把内部各种流程、数据通道梳理清楚，让这个窗口很容易拿到各种数据帮助我们。所以说，设计很好的API，也并不容易。" class="headerlink" title="譬如我们去办事，窗口就类似一个API，如果对于某一件不简单的事情，这个窗口能做到让我们“最多跑一次”，“只盖一枚章”，这个API就是不错的。但现实是跑一次就完成的时候还很困难，需要有关部门把内部各种流程、数据通道梳理清楚，让这个窗口很容易拿到各种数据帮助我们。所以说，设计很好的API，也并不容易。"></a>譬如我们去办事，窗口就类似一个API，如果对于某一件不简单的事情，这个窗口能做到让我们“最多跑一次”，“只盖一枚章”，这个API就是不错的。但现实是跑一次就完成的时候还很困难，需要有关部门把内部各种流程、数据通道梳理清楚，让这个窗口很容易拿到各种数据帮助我们。所以说，设计很好的API，也并不容易。</h3><h3 id="对于设计人员来说，更重视API包含设计和逻辑判断。假设物流中“货物”是数据，存放货物的“总仓库”是数据库，“店铺”是我们的网站、App。页面上显示的内容、数字，以及用户的操作请求和结果都是需要不停搬运的“货物”——数据，则负责调配分配打包的中转站就是API，店铺小哥直接从中转站取货就好。"><a href="#对于设计人员来说，更重视API包含设计和逻辑判断。假设物流中“货物”是数据，存放货物的“总仓库”是数据库，“店铺”是我们的网站、App。页面上显示的内容、数字，以及用户的操作请求和结果都是需要不停搬运的“货物”——数据，则负责调配分配打包的中转站就是API，店铺小哥直接从中转站取货就好。" class="headerlink" title="对于设计人员来说，更重视API包含设计和逻辑判断。假设物流中“货物”是数据，存放货物的“总仓库”是数据库，“店铺”是我们的网站、App。页面上显示的内容、数字，以及用户的操作请求和结果都是需要不停搬运的“货物”——数据，则负责调配分配打包的中转站就是API，店铺小哥直接从中转站取货就好。"></a>对于设计人员来说，更重视API包含设计和逻辑判断。假设物流中“货物”是数据，存放货物的“总仓库”是数据库，“店铺”是我们的网站、App。页面上显示的内容、数字，以及用户的操作请求和结果都是需要不停搬运的“货物”——数据，则负责调配分配打包的中转站就是API，店铺小哥直接从中转站取货就好。</h3><h3 id="对于软件提供商来说，留出API，让别的应用程序来调用，形成生态，软件才能发挥最大的价值，才能更有生命力。"><a href="#对于软件提供商来说，留出API，让别的应用程序来调用，形成生态，软件才能发挥最大的价值，才能更有生命力。" class="headerlink" title="对于软件提供商来说，留出API，让别的应用程序来调用，形成生态，软件才能发挥最大的价值，才能更有生命力。"></a>对于软件提供商来说，留出API，让别的应用程序来调用，形成生态，软件才能发挥最大的价值，才能更有生命力。</h3><h3 id="对于应用开发者来说，有了开放的API，就可以直接调用多家公司做好的功能来做自己的应用，不需要所有的事情都自己操刀，节省精力。云计算、共享经济时代，API就是技术服务商为客户提供服务的方法。"><a href="#对于应用开发者来说，有了开放的API，就可以直接调用多家公司做好的功能来做自己的应用，不需要所有的事情都自己操刀，节省精力。云计算、共享经济时代，API就是技术服务商为客户提供服务的方法。" class="headerlink" title="对于应用开发者来说，有了开放的API，就可以直接调用多家公司做好的功能来做自己的应用，不需要所有的事情都自己操刀，节省精力。云计算、共享经济时代，API就是技术服务商为客户提供服务的方法。"></a>对于应用开发者来说，有了开放的API，就可以直接调用多家公司做好的功能来做自己的应用，不需要所有的事情都自己操刀，节省精力。云计算、共享经济时代，API就是技术服务商为客户提供服务的方法。</h3><p>j<br>作者：简道云<br>链接：<a href="https://www.zhihu.com/question/38594466/answer/487039892">https://www.zhihu.com/question/38594466/answer/487039892</a><br>来源：知乎<br>著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> STM32 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>通识课01</title>
+      <link href="/2021/101840983.html"/>
+      <url>/2021/101840983.html</url>
+      
+        <content type="html"><![CDATA[<h3 id="第一节通识课虽然只讲了些比较基础的东西，但对于我来说也算是受益匪浅了。"><a href="#第一节通识课虽然只讲了些比较基础的东西，但对于我来说也算是受益匪浅了。" class="headerlink" title="第一节通识课虽然只讲了些比较基础的东西，但对于我来说也算是受益匪浅了。"></a>第一节通识课虽然只讲了些比较基础的东西，但对于我来说也算是受益匪浅了。</h3><hr><h3 id="这节课的内容可以分为三大部分：计算机基础、vscode、markdown。"><a href="#这节课的内容可以分为三大部分：计算机基础、vscode、markdown。" class="headerlink" title="这节课的内容可以分为三大部分：计算机基础、vscode、markdown。"></a>这节课的内容可以分为三大部分：计算机基础、vscode、markdown。</h3><h2 id="计算机基础"><a href="#计算机基础" class="headerlink" title="计算机基础"></a>计算机基础</h2><ol><li>文件<blockquote><p>使用计算机的每时每刻都是在和文件打交道</p></blockquote></li></ol><blockquote><p>这里讲了一下分盘以及一些作为小白的我不常用的快捷键，例如：<code>win+e</code>（打开文件资源管理器）以及一些卸载程序的方法</p></blockquote><blockquote><p>还有一个小部分就是内存与储存空间的区别</p></blockquote><ul><li>速度上的区别：内存存取速度快，但是贵，断电数据丢失。硬盘存取速度慢，但便宜，断电数据不丢失。</li><li>使用上的区别：打开浏览器，将来可能频繁用到代码(汇编码)，操作系统会从硬盘中读取到内存里，方便中央处理器(CPU)执行。因为内存读取速度比硬盘快。</li><li>假如把电脑比作人的大脑，内存是你现在立即就能想到的东西，存储空间就是需要提示才能想起来的东西。</li></ul><ol start="2"><li>浏览器<blockquote><p>浏览器部分必然少不了各种快捷键,还有就是讲了搜索引擎与浏览器的区别</p></blockquote></li></ol><ul><li>搜索引擎是一个网址</li><li>浏览器是渲染代码并将其显示出来</li></ul><h2 id="vscode"><a href="#vscode" class="headerlink" title="vscode"></a>vscode</h2><h3 id="听了孟老板的讲解-我也愿称vscode为天下第一的代码编辑器"><a href="#听了孟老板的讲解-我也愿称vscode为天下第一的代码编辑器" class="headerlink" title="听了孟老板的讲解,我也愿称vscode为天下第一的代码编辑器"></a>听了孟老板的讲解,我也愿称vscode为天下第一的代码编辑器</h3><blockquote><p>给我一个只安装vscode的电脑,几乎可以做到所有的事情,包括:qq聊天、逛b站、写代码、玩游戏、连接服务器挂项目…</p></blockquote><h2 id="优秀的笔记语言–MakeDown"><a href="#优秀的笔记语言–MakeDown" class="headerlink" title="优秀的笔记语言–MakeDown"></a>优秀的笔记语言–MakeDown</h2><blockquote><p>关于MakeDown部分我已经在以前的博客中写过了,感兴趣的朋友可以去看看.</p></blockquote>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 通识课 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>浅谈cookie与Session</title>
+      <link href="/2021/073050406.html"/>
+      <url>/2021/073050406.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="浅谈Cookie与Session"><a href="#浅谈Cookie与Session" class="headerlink" title="浅谈Cookie与Session"></a>浅谈Cookie与Session</h2><br/><h4 id="平时，总听到别人谈到，Cookies、Session，听他们说了之后，我也试着了解了一下，今天在这里也写写我自己对Cookie和Session的了解。"><a href="#平时，总听到别人谈到，Cookies、Session，听他们说了之后，我也试着了解了一下，今天在这里也写写我自己对Cookie和Session的了解。" class="headerlink" title="平时，总听到别人谈到，Cookies、Session，听他们说了之后，我也试着了解了一下，今天在这里也写写我自己对Cookie和Session的了解。"></a>平时，总听到别人谈到，Cookies、Session，听他们说了之后，我也试着了解了一下，今天在这里也写写我自己对Cookie和Session的了解。</h4><br/><h4 id="这两种语法的产生都源于HTTP协议是无状态的协议，所以服务端需要记录用户的状态时，就需要用某种机制来识具体的用户，产生这种机制就是Session，典型的场景比如购物车，当你点击下单按钮时，由于HTTP协议无状态，所以并不知道是哪个用户操作的，所以服务端要为特定的用户创建了特定的Session，用用于标识这个用户，并且跟踪用户，这样才知道购物车里面有几本书。再考虑到服务端如何识别特定的客户？这个时候Cookie就登场了。每次HTTP请求的时候，客户端都会发送相应的Cookie信息到服务端。实际上大多数的应用都是用-Cookie-来实现Session跟踪的，第一次创建Session的时候，服务端会在HTTP协议中告诉客户端，需要在-Cookie-里面记录一个Session-ID，以后每次请求把这个会话ID发送到服务器，我就知道你是谁了。"><a href="#这两种语法的产生都源于HTTP协议是无状态的协议，所以服务端需要记录用户的状态时，就需要用某种机制来识具体的用户，产生这种机制就是Session，典型的场景比如购物车，当你点击下单按钮时，由于HTTP协议无状态，所以并不知道是哪个用户操作的，所以服务端要为特定的用户创建了特定的Session，用用于标识这个用户，并且跟踪用户，这样才知道购物车里面有几本书。再考虑到服务端如何识别特定的客户？这个时候Cookie就登场了。每次HTTP请求的时候，客户端都会发送相应的Cookie信息到服务端。实际上大多数的应用都是用-Cookie-来实现Session跟踪的，第一次创建Session的时候，服务端会在HTTP协议中告诉客户端，需要在-Cookie-里面记录一个Session-ID，以后每次请求把这个会话ID发送到服务器，我就知道你是谁了。" class="headerlink" title="这两种语法的产生都源于HTTP协议是无状态的协议，所以服务端需要记录用户的状态时，就需要用某种机制来识具体的用户，产生这种机制就是Session，典型的场景比如购物车，当你点击下单按钮时，由于HTTP协议无状态，所以并不知道是哪个用户操作的，所以服务端要为特定的用户创建了特定的Session，用用于标识这个用户，并且跟踪用户，这样才知道购物车里面有几本书。再考虑到服务端如何识别特定的客户？这个时候Cookie就登场了。每次HTTP请求的时候，客户端都会发送相应的Cookie信息到服务端。实际上大多数的应用都是用 Cookie 来实现Session跟踪的，第一次创建Session的时候，服务端会在HTTP协议中告诉客户端，需要在 Cookie 里面记录一个Session ID，以后每次请求把这个会话ID发送到服务器，我就知道你是谁了。"></a>这两种语法的产生都源于HTTP协议是无状态的协议，所以服务端需要记录用户的状态时，就需要用某种机制来识具体的用户，产生这种机制就是Session，典型的场景比如购物车，当你点击下单按钮时，由于HTTP协议无状态，所以并不知道是哪个用户操作的，所以服务端要为特定的用户创建了特定的Session，用用于标识这个用户，并且跟踪用户，这样才知道购物车里面有几本书。再考虑到服务端如何识别特定的客户？这个时候Cookie就登场了。每次HTTP请求的时候，客户端都会发送相应的Cookie信息到服务端。实际上大多数的应用都是用 Cookie 来实现Session跟踪的，第一次创建Session的时候，服务端会在HTTP协议中告诉客户端，需要在 Cookie 里面记录一个Session ID，以后每次请求把这个会话ID发送到服务器，我就知道你是谁了。</h4><h4 id="Cookie其实还可以用在一些方便用户的场景下，设想你某次登陆过一个网站，下次登录的时候不想再次输入账号了，怎么办？这个信息可以写到Cookie里面，访问网站的时候，网站页面的脚本可以读取这个信息，就自动帮你把用户名给填了，能够方便一下用户。这也是Cookie名称的由来，给用户的一点甜头。"><a href="#Cookie其实还可以用在一些方便用户的场景下，设想你某次登陆过一个网站，下次登录的时候不想再次输入账号了，怎么办？这个信息可以写到Cookie里面，访问网站的时候，网站页面的脚本可以读取这个信息，就自动帮你把用户名给填了，能够方便一下用户。这也是Cookie名称的由来，给用户的一点甜头。" class="headerlink" title="Cookie其实还可以用在一些方便用户的场景下，设想你某次登陆过一个网站，下次登录的时候不想再次输入账号了，怎么办？这个信息可以写到Cookie里面，访问网站的时候，网站页面的脚本可以读取这个信息，就自动帮你把用户名给填了，能够方便一下用户。这也是Cookie名称的由来，给用户的一点甜头。"></a>Cookie其实还可以用在一些方便用户的场景下，设想你某次登陆过一个网站，下次登录的时候不想再次输入账号了，怎么办？这个信息可以写到Cookie里面，访问网站的时候，网站页面的脚本可以读取这个信息，就自动帮你把用户名给填了，能够方便一下用户。这也是Cookie名称的由来，给用户的一点甜头。</h4><h3 id="总的来说："><a href="#总的来说：" class="headerlink" title="总的来说："></a>总的来说：</h3><pre><code> Session是在服务端保存的一个数据结构，用来跟踪用户的状态，这个数据可以保存在集群、数据库、文件中； Cookie是客户端保存用户信息的一种机制，用来记录用户的一些信息，也是实现Session的一种方式。</code></pre><h3 id="二者的区别："><a href="#二者的区别：" class="headerlink" title="二者的区别："></a>二者的区别：</h3><pre><code>1，Session 在服务器端，Cookie 在客户端（浏览器）2，Session 默认被存在在服务器的一个文件里（不是内存）3，Session 的运行依赖 Session id，而 Session id 是存在 Cookie 中的，也就是说，如果浏览器禁用了 Cookie ，同时 Session 也会失效（但是可以通过其它方式实现，比如在 url 中传递 Session_id）4，Session 可以放在 文件、数据库、或内存中都可以。5，用户验证这种场合一般会用 Session</code></pre><h3 id="对于Cookie来说，由于Cookie存储于客户端，就导致了它的不安全。假设要验证用户是否登陆，就必须在Cookie中保存用户名和密码-可能是md5加密后字符串-，并在每次请求页面的时候进行验证。假如你存储-admin变量来表示用户是否登陆，-admin为true的时候表示登陆，为false的时候表示未登录，在第一次通过验证后将-admin等于true存储在Cookie，下次就不用验证了是错的，假如有人伪造一个值为true的-admin变量，-非常的不安全。而Session就不同了，Session是存储在服务器端的，远程用户没办法修改session文件的内容，因此可以单纯存储一个-admin变量来判断是否登陆，首次验证通过后设置-admin值为true，以后判断该值是否为true，假如不是，转入登陆界面，这样就可以减少很多数据库操作了。而且可以减少每次为了验证Cookie而传递密码的不安全性了-session验证只需要传递一次，假如你没有使用SSL安全协议的话-。即使密码进行了md5加密，也是很容易被截获的。"><a href="#对于Cookie来说，由于Cookie存储于客户端，就导致了它的不安全。假设要验证用户是否登陆，就必须在Cookie中保存用户名和密码-可能是md5加密后字符串-，并在每次请求页面的时候进行验证。假如你存储-admin变量来表示用户是否登陆，-admin为true的时候表示登陆，为false的时候表示未登录，在第一次通过验证后将-admin等于true存储在Cookie，下次就不用验证了是错的，假如有人伪造一个值为true的-admin变量，-非常的不安全。而Session就不同了，Session是存储在服务器端的，远程用户没办法修改session文件的内容，因此可以单纯存储一个-admin变量来判断是否登陆，首次验证通过后设置-admin值为true，以后判断该值是否为true，假如不是，转入登陆界面，这样就可以减少很多数据库操作了。而且可以减少每次为了验证Cookie而传递密码的不安全性了-session验证只需要传递一次，假如你没有使用SSL安全协议的话-。即使密码进行了md5加密，也是很容易被截获的。" class="headerlink" title="对于Cookie来说，由于Cookie存储于客户端，就导致了它的不安全。假设要验证用户是否登陆，就必须在Cookie中保存用户名和密码(可能是md5加密后字符串)，并在每次请求页面的时候进行验证。假如你存储$admin变量来表示用户是否登陆，$admin为true的时候表示登陆，为false的时候表示未登录，在第一次通过验证后将$admin等于true存储在Cookie，下次就不用验证了是错的，假如有人伪造一个值为true的$admin变量， 非常的不安全。而Session就不同了，Session是存储在服务器端的，远程用户没办法修改session文件的内容，因此可以单纯存储一个$admin变量来判断是否登陆，首次验证通过后设置$admin值为true，以后判断该值是否为true，假如不是，转入登陆界面，这样就可以减少很多数据库操作了。而且可以减少每次为了验证Cookie而传递密码的不安全性了(session验证只需要传递一次，假如你没有使用SSL安全协议的话)。即使密码进行了md5加密，也是很容易被截获的。"></a>对于Cookie来说，由于Cookie存储于客户端，就导致了它的不安全。假设要验证用户是否登陆，就必须在Cookie中保存用户名和密码(可能是md5加密后字符串)，并在每次请求页面的时候进行验证。假如你存储$admin变量来表示用户是否登陆，$admin为true的时候表示登陆，为false的时候表示未登录，在第一次通过验证后将$admin等于true存储在Cookie，下次就不用验证了是错的，假如有人伪造一个值为true的$admin变量， 非常的不安全。而Session就不同了，Session是存储在服务器端的，远程用户没办法修改session文件的内容，因此可以单纯存储一个$admin变量来判断是否登陆，首次验证通过后设置$admin值为true，以后判断该值是否为true，假如不是，转入登陆界面，这样就可以减少很多数据库操作了。而且可以减少每次为了验证Cookie而传递密码的不安全性了(session验证只需要传递一次，假如你没有使用SSL安全协议的话)。即使密码进行了md5加密，也是很容易被截获的。</h3>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> JSP PHP开发 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>二叉链表的建立与遍历</title>
+      <link href="/2021/052818044.html"/>
+      <url>/2021/052818044.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="二叉链表的建立与遍历"><a href="#二叉链表的建立与遍历" class="headerlink" title="二叉链表的建立与遍历"></a>二叉链表的建立与遍历</h2><h3 id="本人的数据结构实验题目，其主要是建立一棵含有n个结点的二叉树，采用二叉链表存储，实现前序中序后序遍历该二叉树。"><a href="#本人的数据结构实验题目，其主要是建立一棵含有n个结点的二叉树，采用二叉链表存储，实现前序中序后序遍历该二叉树。" class="headerlink" title="本人的数据结构实验题目，其主要是建立一棵含有n个结点的二叉树，采用二叉链表存储，实现前序中序后序遍历该二叉树。"></a>本人的数据结构实验题目，其主要是建立一棵含有n个结点的二叉树，采用二叉链表存储，实现前序中序后序遍历该二叉树。</h3><p>其源码如下：</p><pre><code>#include&lt;stdio.h&gt;#include&lt;stdlib.h&gt;typedef char TElemType;     //创建TElemType类型名typedef struct BiTNode &#123;     //定义树的结点    TElemType data;    struct BiTNode* lchild, * rchild; &#125;BiTNode, * BiTree;//创建二叉链表BiTree Create_BiTree(BiTree&amp; bt) &#123;    char ch;    scanf_s(&quot;%c&quot;, &amp;ch);    if (ch == &#39;#&#39;) bt = NULL;       //当输入#号时其相应结节点赋值为空    else &#123;        bt = (BiTNode*)malloc(sizeof(BiTNode));     //开辟新的结点空间作为树结点        bt-&gt;data = ch;        //printf(&quot;请输入左结点&quot;);        Create_BiTree(bt-&gt;lchild);      //运用递归的方式存储数据，构建二叉树        //printf(&quot;请输入右结点&quot;);        Create_BiTree(bt-&gt;rchild);    &#125;    return bt;&#125;//先序遍历 void preorder(BiTree bt) &#123;    if (bt) &#123;        printf(&quot;%c&quot;, bt-&gt;data);        preorder(bt-&gt;lchild);        preorder(bt-&gt;rchild);    &#125;&#125;//中序遍历void inorder(BiTree bt) &#123;    if (bt) &#123;        preorder(bt-&gt;lchild);        printf(&quot;%c&quot;, bt-&gt;data);        preorder(bt-&gt;rchild);    &#125;&#125;//后序遍历void postorder(BiTree bt) &#123;    if (bt) &#123;        preorder(bt-&gt;lchild);        preorder(bt-&gt;rchild);        printf(&quot;%c&quot;, bt-&gt;data);    &#125;&#125;void CMD_select() &#123;    printf(&quot;\n*************二叉链表的建立及遍历*****************&quot;);    printf(&quot;\n1::二叉链表的前序遍历,2:二叉链表的中序遍历,3:二叉链表的后序遍历，4退出程序\n&quot;);    printf(&quot;请输入数字:&quot;);&#125;int main() &#123;    int n, cmd;    BiTree bt;    printf(&quot;请输入对应字符串：&quot;);    bt = Create_BiTree(bt);    printf(&quot;二叉链表建立成功！！！&quot;);    CMD_select();    scanf_s(&quot;%d&quot;, &amp;cmd);    while (cmd != 4) &#123;        switch (cmd) &#123;        case 1://先序遍历             printf(&quot;序遍历结果：&quot;);            preorder(bt);            CMD_select();            scanf_s(&quot;%d&quot;, &amp;cmd);            break;        case 2://中序遍历             printf(&quot;中序遍历结果：&quot;);            inorder(bt);            CMD_select();            scanf_s(&quot;%d&quot;, &amp;cmd);            break;        case 3://后序遍历             printf(&quot;后序遍历结果：&quot;);            postorder(bt);            CMD_select();            scanf_s(&quot;%d&quot;, &amp;cmd);            break;        default:printf(&quot;命令输入错误&quot;);        &#125;    &#125;    return 0;&#125;</code></pre><h4 id="在这里需要注意的是在控制台建立二叉树的时候，如果一个结点想设置为叶子结点，则该结点的左右孩子均需设置为‘-’表示为空。"><a href="#在这里需要注意的是在控制台建立二叉树的时候，如果一个结点想设置为叶子结点，则该结点的左右孩子均需设置为‘-’表示为空。" class="headerlink" title="在这里需要注意的是在控制台建立二叉树的时候，如果一个结点想设置为叶子结点，则该结点的左右孩子均需设置为‘#’表示为空。"></a>在这里需要注意的是在控制台建立二叉树的时候，如果一个结点想设置为叶子结点，则该结点的左右孩子均需设置为‘#’表示为空。</h4><p><img src="../favicon.png" alt="程序运行结果如图所示"></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 数据结构 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>类模板的使用“</title>
+      <link href="/2021/052534483.html"/>
+      <url>/2021/052534483.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="类模板的定义"><a href="#类模板的定义" class="headerlink" title="类模板的定义"></a>类模板的定义</h2><p>类模板可以理解为一个抽象的类，但类模板并不是真正的类，它会告诉编译器一种生成类的方法，编译器会在遇到类模板的实例化时，会按照模板生成相应的类。其定义形式一般为；</p><pre><code>template&lt;参数名列表&gt;class 类名&#123;      //类的说明&#125;；</code></pre><p>其中，template是关键字，&lt;参数名列表&gt;可以有多个参数，多个模板之间用逗号隔开<br>例如，可定义栈的类模板如下：</p><pre><code>template&lt;class T&gt;class Stack&#123;    public:        Stack(int MaxStackSize=100);        Stack&lt;T&gt;&amp; push(const T&amp;x);        Stack&lt;T&gt; &amp; Pop(T&amp;x);    private:        int m_top;        int m_Maxsize;        T *m_stack;&#125;;</code></pre>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 面向对象C++ </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>用栈将二进制转化成十进制(C语言)</title>
+      <link href="/2021/040428849.html"/>
+      <url>/2021/040428849.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="首先对这种转换方法进行一些啰嗦，详细的代码会在下面给出。"><a href="#首先对这种转换方法进行一些啰嗦，详细的代码会在下面给出。" class="headerlink" title="首先对这种转换方法进行一些啰嗦，详细的代码会在下面给出。"></a>首先对这种转换方法进行一些啰嗦，详细的代码会在下面给出。</h2><hr><h3 id="（由于本人也是一个小白，所以只能记录一些自己的认识，不喜勿喷）栈是一种线性表，它的特性是只能从一端进入，也只能从同一端出来，其他的地方都是封死的。还有就是在形参、实参中究竟传地址还是直接传值的问题就要看你将要进行的操作是什么类型，如果是要对传入的东西进行修改（压栈，出栈…），则传地址；如果只进行测试一类的操作，则可以传值。对了，在进行线性表一类要在栈中开辟空间的操作结束后一定要记得释放空间，不然你的电脑早晚有一天……懂得懂得"><a href="#（由于本人也是一个小白，所以只能记录一些自己的认识，不喜勿喷）栈是一种线性表，它的特性是只能从一端进入，也只能从同一端出来，其他的地方都是封死的。还有就是在形参、实参中究竟传地址还是直接传值的问题就要看你将要进行的操作是什么类型，如果是要对传入的东西进行修改（压栈，出栈…），则传地址；如果只进行测试一类的操作，则可以传值。对了，在进行线性表一类要在栈中开辟空间的操作结束后一定要记得释放空间，不然你的电脑早晚有一天……懂得懂得" class="headerlink" title="（由于本人也是一个小白，所以只能记录一些自己的认识，不喜勿喷）栈是一种线性表，它的特性是只能从一端进入，也只能从同一端出来，其他的地方都是封死的。还有就是在形参、实参中究竟传地址还是直接传值的问题就要看你将要进行的操作是什么类型，如果是要对传入的东西进行修改（压栈，出栈…），则传地址；如果只进行测试一类的操作，则可以传值。对了，在进行线性表一类要在栈中开辟空间的操作结束后一定要记得释放空间，不然你的电脑早晚有一天……懂得懂得"></a>（由于本人也是一个小白，所以只能记录一些自己的认识，不喜勿喷）栈是一种线性表，它的特性是只能从一端进入，也只能从同一端出来，其他的地方都是封死的。还有就是在形参、实参中究竟传地址还是直接传值的问题就要看你将要进行的操作是什么类型，如果是要对传入的东西进行修改（压栈，出栈…），则传地址；如果只进行测试一类的操作，则可以传值。对了，在进行线性表一类要在栈中开辟空间的操作结束后一定要记得释放空间，不然你的电脑早晚有一天……懂得懂得</h3><hr><h2 id="大家心心念念的代码来了（此代码在win10系统下可以运行，亲测）"><a href="#大家心心念念的代码来了（此代码在win10系统下可以运行，亲测）" class="headerlink" title="大家心心念念的代码来了（此代码在win10系统下可以运行，亲测）"></a>大家心心念念的代码来了（此代码在win10系统下可以运行，亲测）</h2><pre><code>#include &lt;stdio.h&gt;#include &lt;stdlib.h&gt;#include &lt;math.h&gt;#define STACK_INIT_SIZE 20      //定义栈的最大容量#define STACKINEMENT 10        //每次容量不够时添加10个空间typedef char Elemtype;         //定义一个类似char的新的Elemtypetypedef struct             //typedef 是为一个类型起新名字。&#123;    Elemtype *base;    Elemtype *top;    int stackSize;           //栈的当前容量&#125;sqStack;void Initstack(sqStack *s)      //创立一个栈,注意判断能否建立成功，初始化&#123;    s-&gt;base=(Elemtype*)malloc(STACK_INIT_SIZE*sizeof(Elemtype));    if(!s-&gt;base)    &#123;        exit(0);    &#125;    s-&gt;top=s-&gt;base;    s-&gt;stackSize=STACK_INIT_SIZE;&#125;void push(sqStack*s,Elemtype e)      //Elemtype的作用是什么  进行压栈操作&#123;    if(s-&gt;top-s-&gt;base&gt;=s-&gt;stackSize)    &#123;        s-&gt;base=(Elemtype*)realloc(s-&gt;base,(s-&gt;stackSize+STACKINEMENT)*sizeof(Elemtype));        if(!s-&gt;base)        &#123;            exit(0);        &#125;    &#125;    *(s-&gt;top)=e;        //运用指针进行栈的压入    s-&gt;top++;&#125;void POp(sqStack*s,Elemtype *e)       //出栈操作&#123;    if(s-&gt;top==s-&gt;base)    &#123;        return;    &#125;    *e=*--(s-&gt;top);&#125;int StackLen(sqStack s)    //返回栈的当前长度&#123;    return(s.top-s.base);&#125;int main()&#123;    Elemtype c;    sqStack s;    Initstack(&amp;s);    int len,i,sum=0;    printf(&quot;请输入二进制数，输入#号表示结束!\n&quot;);    scanf(&quot;%c&quot;,&amp;c);    while(c!=&#39;#&#39;)    &#123;        push(&amp;s,c);        scanf(&quot;%c&quot;,&amp;c);    &#125;    getchar();    len=StackLen(s);    printf(&quot;栈的当前长度是:%d\n&quot;,len);    for(i=0;i&lt;len;i++)    &#123;        POp(&amp;s,&amp;c);        sum=sum+(c-48)*pow(2,i);       //pow函数作用为2的i次幂，头文件是math.h    &#125;    printf(&quot;转化后的函数为：%d&quot;,sum);    free(&amp;s);    return 0;&#125;</code></pre><h2 id="malloc与realloc的区别"><a href="#malloc与realloc的区别" class="headerlink" title="malloc与realloc的区别"></a>malloc与realloc的区别</h2><p>realloc函数其实就是对malloc的增加再次封装。本人总结malloc常用于空间的开辟，而realloc函数以开发的空间不足而再次开辟</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 数据结构 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Markdown</title>
+      <link href="/2021/030817683.html"/>
+      <url>/2021/030817683.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="学习使用makedown语法写博客"><a href="#学习使用makedown语法写博客" class="headerlink" title="学习使用makedown语法写博客"></a>学习使用makedown语法写博客</h1><hr><h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>Markdown 是一种轻量级标记语言，它允许人们使用易读易写的纯文本格式编写文档，在 2004 由约翰·格鲁伯(英语：John Gruber)创建。Markdown 编写的文档可以导出 HTML 、Word、图像、PDF、Epub 等多种格式的文档。Markdown 编写的文档后缀为 .md, .markdown。</p><p>Markdown优点：语法简洁明了，纯文本格式用记事本就能打开，兼容性强。</p><p>Markdown缺点：一些平台不支持Markdown语法，需要学习语法，排版能力能力差，对图片支持不好。</p><p>支持Markdown语法软件：</p><ul><li>Windows: MarkdownPad</li><li>Linux: ReText</li><li>Mac:Mou</li><li>web：简书、思否、马克飞象</li></ul><pre><code>关于使用Markdown的建议：首先，Markdown是为那些需要经常码字或者进行文字排版的、对码字手速和排版顺畅度有要求的人群设计的，他们希望用键盘把文字内容啪啪啪地打出来后就已经排版好了，最好从头到尾都不要使用鼠标。这些人包括经常需要写文档的码农、博客写手、网站小编、出版业人士等等。如果你用常见的所见即所得的方式排版(比如知乎、微信公众号等等)就很顺手，那就不需要特意去用Markdown了。</code></pre><hr><h2 id="代码块"><a href="#代码块" class="headerlink" title="代码块"></a>代码块</h2><pre><code class="Java">代码块的使用：```语言（例：Java）</code></pre><hr><h2 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h2><p>“#”的数量决定了相对应的标题的级别</p><hr><h2 id="字体"><a href="#字体" class="headerlink" title="字体"></a>字体</h2><pre><code class="Java">（1）加粗：**内容**（2）高亮：`内容`（3）删除线： ~~内容~~（4）斜体：*内容*</code></pre><p><strong>内容</strong><br><code>内容</code><br><del>内容</del><br><em>内容</em></p><hr><h2 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h2><pre><code>有几个“&gt;”就是几级引用</code></pre><blockquote><p>一级引用</p><blockquote><p>二级引用</p><blockquote><p>三级引用</p></blockquote></blockquote></blockquote><hr><h2 id="分割线"><a href="#分割线" class="headerlink" title="分割线"></a>分割线</h2><pre><code>(1)分割线1：三个或三个以上---(2)分割线2：三个或三个以上***</code></pre><hr><h2 id="图片插入"><a href="#图片插入" class="headerlink" title="图片插入"></a>图片插入</h2><pre><code>语法：![图片名称](图片的地址)</code></pre><p><img src="https://image.baidu.com/search/detail?ct=503316480&z=0&ipn=d&word=%E7%AB%A0%E8%8B%A5%E6%A5%A0&step_word=&hs=2&pn=0&spn=0&di=60830&pi=0&rn=1&tn=baiduimagedetail&is=0,0&istype=0&ie=utf-8&oe=utf-8&in=&cl=2&lm=-1&st=undefined&cs=2234246351,1419608415&os=3952459678,978243740&simid=3086039085,3667234895&adpicid=0&lpn=0&ln=1461&fr=&fmq=1615203120237_R&fm=&ic=undefined&s=undefined&hd=undefined&latest=undefined&copyright=undefined&se=&sme=&tab=0&width=undefined&height=undefined&face=undefined&ist=&jit=&cg=&bdtype=0&oriquery=&objurl=https://gimg2.baidu.com/image_search/src=http://c-ssl.duitang.com/uploads/item/201810/06/20181006153118_mnylb.jpg&refer=http://c-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1617795148&t=26cd0bda4764a2baa94b04e397c1fe02&fromurl=ippr_z2C$qAzdH3FAzdH3Fooo_z&e3B17tpwg2_z&e3Bv54AzdH3Fks52AzdH3F?t1=8adnmbamm0&gsm=1&rpstart=0&rpnum=0&islist=&querylist=&force=undefined" alt="插入的图片"></p><hr><h2 id="超链接"><a href="#超链接" class="headerlink" title="超链接"></a>超链接</h2><pre><code>语法：[内容](超链接)</code></pre><p>例：<br><a href="https://image.baidu.com/search/index?tn=baiduimage&ct=201326592&lm=-1&cl=2&ie=gb18030&word=%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD&fr=ala&ala=1&alatpl=adress&pos=0&hs=2&xthttps=000000">章若楠</a></p><hr><h2 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h2><pre><code>无序列表：- 内容1         - 内容2         - 内容3有序列表：序号数字+.+内容</code></pre><p>例1：</p><ul><li>内容1</li><li>内容2</li><li>内容3</li></ul><p>例2：</p><ol><li>内容</li><li>内容</li><li>内容</li></ol><hr><h2 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h2><pre><code>表头|表头|表头---|:--:|---:内容|内容|内容内容|内容|内容第二行分割表头和内容。- 有一个就行，为了对齐，多加了几个文字默认居左-两边加：表示文字居中-右边加：表示文字居右注：原生的语法两边都要用 | 包起来。此处省略</code></pre><hr><h1 id="更多内容"><a href="#更多内容" class="headerlink" title="更多内容"></a>更多内容</h1><p><a href="https://zhongkuo.github.io/">我的博客</a></p><hr>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+  
+  
+</search>

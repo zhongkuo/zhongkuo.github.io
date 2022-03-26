@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="类模板的使用“, 玄月-钟阔的个人主页">
+    <meta name="keywords" content="二叉链表的建立与遍历, 玄月-钟阔的个人主页">
     <meta name="description" content="不要等到明天，今天就行动起来！">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>类模板的使用“ | 玄月-钟阔的个人主页</title>
+    <title>二叉链表的建立与遍历 | 玄月-钟阔的个人主页</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -29,7 +29,8 @@
 
     <script src="/libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 5.4.0"></head>
+<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="玄月-钟阔的个人主页" type="application/atom+xml">
+</head>
 
 
 
@@ -310,12 +311,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/8.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/17.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">类模板的使用“</h1>
+                    <h1 class="description center-align post-title">二叉链表的建立与遍历</h1>
                 </div>
             </div>
         </div>
@@ -431,8 +432,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1C/">
-                                <span class="chip bg-color">面向对象C++</span>
+                            <a href="/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/">
+                                <span class="chip bg-color">数据结构</span>
                             </a>
                         
                     </div>
@@ -447,12 +448,17 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-05-25
+                    2021-05-28
                 </div>
                 
 
                 
 
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
+                    556
+                </div>
                 
 
                 
@@ -478,10 +484,99 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="类模板的定义"><a href="#类模板的定义" class="headerlink" title="类模板的定义"></a>类模板的定义</h2><p>类模板可以理解为一个抽象的类，但类模板并不是真正的类，它会告诉编译器一种生成类的方法，编译器会在遇到类模板的实例化时，会按照模板生成相应的类。其定义形式一般为；</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">template&lt;参数名列表&gt;</span><br><span class="line">class 类名</span><br><span class="line">&#123;</span><br><span class="line">      &#x2F;&#x2F;类的说明</span><br><span class="line">&#125;；</span><br></pre></td></tr></table></figure>
-<p>其中，template是关键字，&lt;参数名列表&gt;可以有多个参数，多个模板之间用逗号隔开<br>例如，可定义栈的类模板如下：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">template&lt;class T&gt;</span><br><span class="line">class Stack</span><br><span class="line">&#123;</span><br><span class="line">    public:</span><br><span class="line">        Stack(int MaxStackSize&#x3D;100);</span><br><span class="line">        Stack&lt;T&gt;&amp; push(const T&amp;x);</span><br><span class="line">        Stack&lt;T&gt; &amp; Pop(T&amp;x);</span><br><span class="line">    private:</span><br><span class="line">        int m_top;</span><br><span class="line">        int m_Maxsize;</span><br><span class="line">        T *m_stack;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+                <h2 id="二叉链表的建立与遍历"><a href="#二叉链表的建立与遍历" class="headerlink" title="二叉链表的建立与遍历"></a>二叉链表的建立与遍历</h2><h3 id="本人的数据结构实验题目，其主要是建立一棵含有n个结点的二叉树，采用二叉链表存储，实现前序中序后序遍历该二叉树。"><a href="#本人的数据结构实验题目，其主要是建立一棵含有n个结点的二叉树，采用二叉链表存储，实现前序中序后序遍历该二叉树。" class="headerlink" title="本人的数据结构实验题目，其主要是建立一棵含有n个结点的二叉树，采用二叉链表存储，实现前序中序后序遍历该二叉树。"></a>本人的数据结构实验题目，其主要是建立一棵含有n个结点的二叉树，采用二叉链表存储，实现前序中序后序遍历该二叉树。</h3><p>其源码如下：</p>
+<pre><code>#include&lt;stdio.h&gt;
+#include&lt;stdlib.h&gt;
+typedef char TElemType;     //创建TElemType类型名
+
+
+typedef struct BiTNode &#123;     //定义树的结点
+    TElemType data;
+    struct BiTNode* lchild, * rchild; 
+&#125;BiTNode, * BiTree;
+
+
+//创建二叉链表
+BiTree Create_BiTree(BiTree&amp; bt) &#123;
+    char ch;
+    scanf_s(&quot;%c&quot;, &amp;ch);
+    if (ch == &#39;#&#39;) bt = NULL;       //当输入#号时其相应结节点赋值为空
+    else &#123;
+        bt = (BiTNode*)malloc(sizeof(BiTNode));     //开辟新的结点空间作为树结点
+        bt-&gt;data = ch;
+        //printf(&quot;请输入左结点&quot;);
+        Create_BiTree(bt-&gt;lchild);      //运用递归的方式存储数据，构建二叉树
+        //printf(&quot;请输入右结点&quot;);
+        Create_BiTree(bt-&gt;rchild);
+    &#125;
+    return bt;
+&#125;
+//先序遍历 
+void preorder(BiTree bt) &#123;
+    if (bt) &#123;
+        printf(&quot;%c&quot;, bt-&gt;data);
+        preorder(bt-&gt;lchild);
+        preorder(bt-&gt;rchild);
+    &#125;
+&#125;
+//中序遍历
+void inorder(BiTree bt) &#123;
+    if (bt) &#123;
+        preorder(bt-&gt;lchild);
+        printf(&quot;%c&quot;, bt-&gt;data);
+        preorder(bt-&gt;rchild);
+    &#125;
+&#125;
+//后序遍历
+void postorder(BiTree bt) &#123;
+    if (bt) &#123;
+        preorder(bt-&gt;lchild);
+        preorder(bt-&gt;rchild);
+        printf(&quot;%c&quot;, bt-&gt;data);
+    &#125;
+&#125;
+void CMD_select() &#123;
+    printf(&quot;\n*************二叉链表的建立及遍历*****************&quot;);
+    printf(&quot;\n1::二叉链表的前序遍历,2:二叉链表的中序遍历,3:二叉链表的后序遍历，4退出程序\n&quot;);
+    printf(&quot;请输入数字:&quot;);
+&#125;
+
+
+int main() &#123;
+    int n, cmd;
+    BiTree bt;
+    printf(&quot;请输入对应字符串：&quot;);
+    bt = Create_BiTree(bt);
+    printf(&quot;二叉链表建立成功！！！&quot;);
+    CMD_select();
+    scanf_s(&quot;%d&quot;, &amp;cmd);
+    while (cmd != 4) &#123;
+        switch (cmd) &#123;
+        case 1://先序遍历 
+            printf(&quot;序遍历结果：&quot;);
+            preorder(bt);
+            CMD_select();
+            scanf_s(&quot;%d&quot;, &amp;cmd);
+            break;
+        case 2://中序遍历 
+            printf(&quot;中序遍历结果：&quot;);
+            inorder(bt);
+            CMD_select();
+            scanf_s(&quot;%d&quot;, &amp;cmd);
+            break;
+        case 3://后序遍历 
+            printf(&quot;后序遍历结果：&quot;);
+            postorder(bt);
+            CMD_select();
+            scanf_s(&quot;%d&quot;, &amp;cmd);
+            break;
+        default:printf(&quot;命令输入错误&quot;);
+        &#125;
+    &#125;
+    return 0;
+&#125;
+</code></pre>
+<h4 id="在这里需要注意的是在控制台建立二叉树的时候，如果一个结点想设置为叶子结点，则该结点的左右孩子均需设置为‘-’表示为空。"><a href="#在这里需要注意的是在控制台建立二叉树的时候，如果一个结点想设置为叶子结点，则该结点的左右孩子均需设置为‘-’表示为空。" class="headerlink" title="在这里需要注意的是在控制台建立二叉树的时候，如果一个结点想设置为叶子结点，则该结点的左右孩子均需设置为‘#’表示为空。"></a>在这里需要注意的是在控制台建立二叉树的时候，如果一个结点想设置为叶子结点，则该结点的左右孩子均需设置为‘#’表示为空。</h4><p><img src="../favicon.png" alt="程序运行结果如图所示"></p>
 
                 
             </div>
@@ -508,7 +603,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://example.com/2021/05/25/%E7%B1%BB%E6%A8%A1%E6%9D%BF%E7%9A%84%E4%BD%BF%E7%94%A8/">http://example.com/2021/05/25/%E7%B1%BB%E6%A8%A1%E6%9D%BF%E7%9A%84%E4%BD%BF%E7%94%A8/</a>
+                    <a href="http://example.com/2021/052818044.html">http://example.com/2021/052818044.html</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -546,8 +641,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1C/">
-                                    <span class="chip bg-color">面向对象C++</span>
+                                <a href="/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/">
+                                    <span class="chip bg-color">数据结构</span>
                                 </a>
                             
                         </div>
@@ -677,10 +772,10 @@
                         <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
                     </ul>
                     <div id="alipay">
-                        <img src="/./photo/zhifubaoshoukuan.jpg" class="reward-img" alt="支付宝打赏二维码">
+                        <img src="/./source/medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
                     </div>
                     <div id="wechat">
-                        <img src="/./photo/weixinshoukuanma.png" class="reward-img" alt="微信打赏二维码">
+                        <img src="/source/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
                     </div>
                 </div>
             </div>
@@ -721,13 +816,13 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2021/05/28/%E4%BA%8C%E5%8F%89%E9%93%BE%E8%A1%A8%E7%9A%84%E5%BB%BA%E7%AB%8B%E4%B8%8E%E9%81%8D%E5%8E%86/">
+                <a href="/2021/073050406.html">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="二叉链表的建立与遍历">
+                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="浅谈cookie与Session">
                         
-                        <span class="card-title">二叉链表的建立与遍历</span>
+                        <span class="card-title">浅谈cookie与Session</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -738,7 +833,7 @@
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-05-28
+                            <i class="far fa-clock fa-fw icon-date"></i>2021-07-30
                         </span>
                         <span class="publish-author">
                             
@@ -751,8 +846,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/">
-                        <span class="chip bg-color">数据结构</span>
+                    <a href="/tags/JSP-PHP%E5%BC%80%E5%8F%91/">
+                        <span class="chip bg-color">JSP PHP开发</span>
                     </a>
                     
                 </div>
@@ -766,13 +861,13 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/04/04/%E7%94%A8%E6%A0%88%E5%B0%86%E4%BA%8C%E8%BF%9B%E5%88%B6%E8%BD%AC%E5%8C%96%E6%88%90%E5%8D%81%E8%BF%9B%E5%88%B6-C%E8%AF%AD%E8%A8%80/">
+                <a href="/2021/052534483.html">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="用栈将二进制转化成十进制(C语言)">
+                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="类模板的使用“">
                         
-                        <span class="card-title">用栈将二进制转化成十进制(C语言)</span>
+                        <span class="card-title">类模板的使用“</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -783,7 +878,7 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-04-04
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-05-25
                             </span>
                         <span class="publish-author">
                             
@@ -796,8 +891,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/">
-                        <span class="chip bg-color">数据结构</span>
+                    <a href="/tags/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1C/">
+                        <span class="chip bg-color">面向对象C++</span>
                     </a>
                     
                 </div>
